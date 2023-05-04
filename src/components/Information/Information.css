@@ -5,10 +5,12 @@
 }
 
 .information-image {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
+  margin-top: 15px;
 }
 
 /* .information-text-form {

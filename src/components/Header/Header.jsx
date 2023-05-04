@@ -6,26 +6,26 @@ import './../../App.css'
 const Header = () => {
   return (
     <div className="header">
-      <div className="header-logo-container">
-        <img className="header-logo" src={logo} alt="logo" />
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Inicio</a>
+      <nav className="header-nav">
+        <ul className="header-nav-ul">
+          {/* <li className="header-logo">
+            <img className="header-logo" src={logo} alt="logo" />
+          </li> */}
+          <li className="header-email">
+            <a href="mailto:info@aseguresucaballo.com">
+              info@aseguresucaballo.com
+            </a>
           </li>
-          <li>
-            <a href="#">Seguros</a>
+          <li className="header-phone">
+            <a href="tel:986469808">986 46 98 08</a>
           </li>
-          <li>
-            <a href="#">Contacto</a>
+          <li className="header-movil">
+            <a href="https://api.whatsapp.com/send?phone=34698289594">
+              698 289 594
+            </a>
           </li>
         </ul>
       </nav>
-      <div className="header-logo-text">
-        <p> ASEGURE SU CABALLO DE RECREO</p>
-        <p className="header-phone">986 46 98 08 - 698 289 594</p>
-      </div>
     </div>
   );
 }
