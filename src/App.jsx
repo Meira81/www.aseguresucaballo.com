@@ -9,9 +9,10 @@ import Information from "./components/Information/Information";
 function App() {
   return (
     <div className="App">
+      
       <Header />
       <main className="main">
-        <Information/>
+        <Information />
       </main>
       <Footer />
     </div>
