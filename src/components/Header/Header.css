@@ -1,30 +1,42 @@
 .header {
   grid-area: header;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #f2f2f2;
   padding: 16px;
   height: 70px;
+  width: 100%;
+  /* Establece el ancho del encabezado al 100% */
 }
 
-.header-logo-text {
+.header-nav-ul {
   display: flex;
-  align-items: center;
-  gap: 3rem
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  /* Establece el ancho de la lista al 100% */
 }
-.header-logo-container {
+
+.header-nav-ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   
-  flex: 0 0 auto;
-  margin-right: 16px;
+}
+
+.header-nav-ul li a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  /* Establece el ancho de los enlaces en la lista al 100% */
+  text-align: center;
+  /* Centra el texto en los enlaces */
 }
 
 .header-logo {
-  height: 60px;
-  border-radius: 25%;
-}
-
-.header-phone {
-  font-size: 18px;
-  color: #666;
+  height: 50px;
+  width: 50px;
+  margin-top: -14px;
 }
