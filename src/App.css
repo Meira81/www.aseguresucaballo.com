@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  grid-template-rows: 100px auto 50px;
+  grid-template-rows: 70px auto 50px;
   grid-template-columns: 1fr;
   grid-template-areas:
     "header"
@@ -11,9 +11,9 @@
 }
 
 .main{
-  display: flex;
+  display: grid;
   padding: 1rem;
-  
+  width: 100%;
 }
 
 .app-information {
