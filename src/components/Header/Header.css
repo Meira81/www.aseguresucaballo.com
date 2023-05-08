@@ -1,21 +1,18 @@
 .header {
   grid-area: header;
-  background-color: #f2f2f2;
+  background-color: #aa2525;
   padding: 16px;
   height: 70px;
   width: 100%;
-  /* Establece el ancho del encabezado al 100% */
 }
 
 .header-nav-ul {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-evenly;
   list-style: none;
   margin: 0;
   padding: 15px;
   width: 100%;
-  /* Establece el ancho de la lista al 100% */
 }
 
 .header-nav-ul li {
@@ -30,9 +27,7 @@
   text-decoration: none;
   color: inherit;
   width: 100%;
-  /* Establece el ancho de los enlaces en la lista al 100% */
   text-align: center;
-  /* Centra el texto en los enlaces */
 }
 
 .header-logo {
