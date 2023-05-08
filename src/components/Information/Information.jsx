@@ -3,7 +3,7 @@ import "./Information.css";
 import image from "../../assets/imagen.jpg";
 
 const Information = () => {
-  const [formData, setFormData] = useState({
+  /* const [formData, setFormData] = useState({
     name: "",
     phone: "",
   });
@@ -17,43 +17,86 @@ const Information = () => {
     event.preventDefault();
     console.log(formData);
     // Aquí podrías enviar la información del formulario al servidor
-  };
+  }; */
 
   return (
-    <>
-      
-      {/* <div className="information-text-form"> */}
-        
-        <figure className="information-figure-image">
+    <div className="information">
+      <section className="information-barra">
+        <div className="left">
+        <article className="information-article-left">
+          <p>Seguro para caballos</p>
+          <p>Destinado a caballos de uso recreativo.</p>
+          {/* <p>Sal a cabalgar con tu caballo sin preocupaciones</p> */}
+        </article>
+      </div>
+      </section>
+
+      <figure className="information-figure-image">
         <img className="information-image" src={image} alt="imagen-caballo" />
       </figure>
-       {/*  <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Nombre completo</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-              required
-            />
+      
+      <div className="right">
+        <div class="container">
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa fa-shield"></i>
+            </div>
+            <div class="card-content">
+              <h3>Responsabilidad Civil</h3>
+              <p>Hasta 300.000 €</p>
+            </div>
           </div>
-          <div className="form-group">
-            <label htmlFor="phone">Teléfono</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleInputChange}
-              required
-            />
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa fa-eur"></i>
+            </div>
+            <div class="card-content">
+              <h3>Reembolso de gastos de retirada</h3>
+              <p>En caso de fallecimiento hasta 300 €</p>
+            </div>
           </div>
-          <button type="submit">Enviar</button>
-        </form> */}
-      {/* </div> */}
-    </>
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa fa-balance-scale"></i>
+            </div>
+            <div class="card-content">
+              <h3>Defensa jurídica</h3>
+              <p>Hasta 6.000 €</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa fa-car"></i>
+            </div>
+            <div class="card-content">
+              <h3>Sin franquicias</h3>
+              <p>
+                Ni en la retirada ni en los daños a personas que ocasione el
+                caballo, sólo 75 euros en caso de daños materiales
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa fa-handshake"></i>
+            </div>
+            <div class="card-content">
+              <h3>Con la garantía de Caser Seguros</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa fa-shield"></i>
+            </div>
+            <div class="card-content">
+              <h3>56,09 €</h3>
+              <p>Precio fijo anual por caballo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
