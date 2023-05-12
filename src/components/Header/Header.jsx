@@ -8,9 +8,9 @@ const Header = () => {
     <div className="header">
       <nav className="header-nav">
         <ul className="header-nav-ul">
-          {/* <li className="header-logo">
-            <img className="header-logo" src={logo} alt="logo" />
-          </li> */}
+          <li className='header-logo'>
+            <a href="https://www.aseguresucaballo.com">ASEGURESUCABALLO</a>
+            </li>
           <li className="header-email">
             <a href="mailto:info@aseguresucaballo.com">
               info@aseguresucaballo.com

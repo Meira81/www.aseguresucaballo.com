@@ -21,20 +21,19 @@ const Information = () => {
 
   return (
     <div className="information">
-      <section className="information-barra">
+      
         <div className="left">
-        <article className="information-article-left">
-          <p>Seguro para caballos</p>
-          <p>Destinado a caballos de uso recreativo.</p>
-          {/* <p>Sal a cabalgar con tu caballo sin preocupaciones</p> */}
-        </article>
-      </div>
-      </section>
-
+          <article className="information-article-left">
+            <p className="information-p-title">SEGURO PARA CABALLOS DE PASEO</p>
+            <p>Sal a disfrutar de tu caballo sin preocupaciones</p>
+            {/* <p>Sal a cabalgar con tu caballo sin preocupaciones</p> */}
+          </article>
+        </div>
+  
       <figure className="information-figure-image">
         <img className="information-image" src={image} alt="imagen-caballo" />
       </figure>
-      
+
       <div className="right">
         <div class="container">
           <div class="card">
@@ -66,7 +65,7 @@ const Information = () => {
           </div>
           <div class="card">
             <div class="card-icon">
-              <i class="fa fa-car"></i>
+              <i class="fa fa-eur"></i>
             </div>
             <div class="card-content">
               <h3>Sin franquicias</h3>
@@ -78,7 +77,7 @@ const Information = () => {
           </div>
           <div class="card">
             <div class="card-icon">
-              <i class="fa fa-handshake"></i>
+              <i class="fa fa-check-circle-o" aria-hidden="true"></i>
             </div>
             <div class="card-content">
               <h3>Con la garantía de Caser Seguros</h3>
@@ -87,7 +86,7 @@ const Information = () => {
           </div>
           <div class="card">
             <div class="card-icon">
-              <i class="fa fa-shield"></i>
+              <i class="fa fa-eur"></i>
             </div>
             <div class="card-content">
               <h3>56,09 €</h3>
