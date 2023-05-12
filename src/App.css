@@ -1,3 +1,4 @@
+
 .App {
   display: grid;
   grid-template-rows: 50px auto 50px;
@@ -7,19 +8,20 @@
     "information"
     "footer";
   min-height: 100vh;
-  
-}
-
-.main{
-  display: grid;
-  padding: 1rem;
+  height: 100%;
   width: 100%;
 }
 
-.app-information {
+/* .main{
+  display: grid;
+  padding: 1rem;
+  width: 100%;
+} */
+
+/* .app-information {
   grid-area: information;
 }
-
+ */
 
 
 
