@@ -18,18 +18,25 @@
   justify-content: space-evenly;
   list-style: none;
   margin: 0;
-  padding: 15px;
+  /* padding: 15px; */
   width: 100%
+
 }
 
 .footer-nav-ul-li-a {
   color: white;
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
+  .footer{
+    height: 80px;
+  }
   .footer-nav-ul {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 5px;
+    
   }
 
   .footer-email,
@@ -37,6 +44,7 @@
   .footer-movil {
     width: 100%;
     text-align: center;
+    
   }
-} */
+}
 

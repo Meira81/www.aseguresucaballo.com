@@ -21,19 +21,24 @@ const Information = () => {
 
   return (
     <div className="information">
-      
-        <div className="left">
-          <article className="information-article-left">
-            <p className="information-p-title">SEGURO PARA CABALLOS DE PASEO</p>
-            <p className="information-p-subtitle">Sal a disfrutar de tu caballo sin preocupaciones</p>
-          </article>
-        </div>
-  
+      <div className="left">
+        <article className="information-article-left">
+          <p className="information-p-title">SEGURO PARA CABALLOS DE PASEO</p>
+          <p className="information-p-subtitle">
+            Sal a disfrutar de tu caballo sin preocupaciones
+          </p>
+        </article>
+      </div>
+
       <figure className="information-figure-image">
         <img className="information-image" src={image} alt="imagen-caballo" />
       </figure>
 
       <div className="right">
+        <h2 className="titulo-coberturas">
+          El seguro para equinos más económico con las mejores prestaciones.
+        </h2>
+        <h2 className="coberturas">Qué cubren nuestros seguros:</h2>
         <div class="container">
           <div class="card">
             <div class="card-icon">
