@@ -1,6 +1,6 @@
 .header {
   grid-area: header;
-  background-color: #aa2525;
+  background-color: #007363;
   height: 70px;
   width: 100%;
 
@@ -16,11 +16,25 @@
   
 }
 
+.header-contact-group{
+  display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    width: 150%;
+  height: 20px;
+}
+
 .header-nav-ul li {
-  width: 100%;
+  width: 80%;
   align-items: center;
   
   
+}
+.logo {
+  width: 180px;
+  margin-top:-70px;
+  margin-left: -25px;
 }
 
 .header-nav-ul li a {
@@ -30,3 +44,19 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1250px) {
+  .header-email {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-contact-group{
+    flex-direction: column;
+    gap:8px;
+    margin-top: 6px;
+  }
+
+ 
+  
+}
