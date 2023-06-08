@@ -3,21 +3,6 @@ import "./Information.css";
 import image from "../../assets/imagen.jpg";
 
 const Information = () => {
-  /* const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-  });
-
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(formData);
-    // Aquí podrías enviar la información del formulario al servidor
-  }; */
 
   return (
     <div className="information">
@@ -35,10 +20,12 @@ const Information = () => {
       </figure>
 
       <div className="right">
-        <h2 className="titulo-coberturas">
-          El seguro para equinos más económico con las mejores prestaciones.
-        </h2>
-        <h2 className="coberturas">Qué cubren nuestros seguros:</h2>
+        <section className="container-titulos">
+          <h2 className="titulo-coberturas">
+            El seguro para equinos más económico con las mejores prestaciones
+          </h2>
+          <h2 className="coberturas">¿Qué cubren nuestros seguros?</h2>
+        </section>
         <div class="container">
           <div class="card">
             <div class="card-icon">
@@ -46,7 +33,7 @@ const Information = () => {
             </div>
             <div class="card-content">
               <h3>Responsabilidad Civil</h3>
-              <p>Hasta 300.000 €</p>
+              <p>Hasta 300.000 € por siniestro para daños a terceros</p>
             </div>
           </div>
           <div class="card">
@@ -54,8 +41,11 @@ const Information = () => {
               <i class="fa fa-eur"></i>
             </div>
             <div class="card-content">
-              <h3>Reembolso de gastos de retirada</h3>
-              <p>En caso de fallecimiento hasta 300 €</p>
+              <h3>Gastos de retirada</h3>
+              <p>
+                En caso de fallecimiento reembolsamos los gastos de retirada
+                hasta 300 €
+              </p>
             </div>
           </div>
           <div class="card">
@@ -64,7 +54,10 @@ const Information = () => {
             </div>
             <div class="card-content">
               <h3>Defensa jurídica</h3>
-              <p>Hasta 6.000 €</p>
+              <p>
+                Hasta 6.000 € por siniestro por si necesitas representación
+                legal para cualquier reclamación
+              </p>
             </div>
           </div>
           <div class="card">
@@ -84,8 +77,11 @@ const Information = () => {
               <i class="fa fa-check-circle-o" aria-hidden="true"></i>
             </div>
             <div class="card-content">
-              <h3>Con la garantía de Caser Seguros</h3>
-              <p></p>
+              <h3>Caser Seguros</h3>
+              <p>
+                Tenemos el respaldo de una compañía lider para poder ofrecerte
+                el mejor seguro al mejor precio
+              </p>
             </div>
           </div>
           <div class="card">
@@ -93,8 +89,12 @@ const Information = () => {
               <i class="fa fa-eur"></i>
             </div>
             <div class="card-content">
-              <h3>56,09 €</h3>
-              <p>Precio fijo anual por caballo</p>
+              <h3>Precio</h3>
+              <p>56,09 €/año por caballo</p>
+              <p className="nota">
+                (sujeto a posibles variaciones por parte de la compañía
+                aseguradora)
+              </p>
             </div>
           </div>
         </div>

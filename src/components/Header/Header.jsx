@@ -25,7 +25,7 @@ const Header = () => {
               <span
                 style={{
                   color: "white",
-                  fontWeight: "bold",
+                  /* fontWeight: "bold", */
                   marginLeft: "5px",
                 }}
               >
@@ -40,7 +40,7 @@ const Header = () => {
               <span
                 style={{
                   color: "white",
-                  fontWeight: "bold",
+                  /* fontWeight: "bold", */
                   marginLeft: "5px",
                 }}
               >
@@ -55,7 +55,7 @@ const Header = () => {
               <span
                 style={{
                   color: "white",
-                  fontWeight: "bold",
+                  /* fontWeight: "bold", */
                   marginLeft: "5px",
                 }}
               >

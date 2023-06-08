@@ -22,11 +22,16 @@
 }
 
 .information-article-left {
-  top: 0;
+  /* top: 0;
   left: 0;
   width: 100%;
-  padding: 30px;
-  margin-top: 1rem;
+  
+  margin-top: 1rem; */
+  padding: 20px;
+  margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .information-article-left p {
@@ -53,7 +58,13 @@
   padding: 15px;
   background-color: white;
 }
+ .container-titulos {
+   
 
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+ }
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -95,6 +106,7 @@
   line-height: 1.5;
   color: #555;
 }
+
 
 @media screen and (min-width: 800px) {
   .information {
@@ -155,6 +167,7 @@
     padding: 15px;
     background-color: white;
   }
+
 }
 
 

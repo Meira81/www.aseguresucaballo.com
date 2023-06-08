@@ -1,0 +1,38 @@
+.floating-button {
+  position: fixed;
+  bottom: 300px;
+  right: 50px;
+}
+
+.button-floating{
+  background-color: #007363;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.floating-button p {
+  margin: 0;
+}
+
+.floating-button-top {
+  font-size: 14px;
+}
+
+.floating-button-bottom {
+  font-size: 16px;
+}
+
+.floating-button button:hover {
+  background-color: #00594d;
+}
+
