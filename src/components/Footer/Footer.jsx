@@ -18,7 +18,7 @@ const Footer = () => {
               <span
                 style={{
                   color: "white",
-                  fontWeight: "bold",
+                  /* fontWeight: "bold", */
                   marginLeft: "5px",
                 }}
               >
@@ -32,7 +32,7 @@ const Footer = () => {
               <span
                 style={{
                   color: "white",
-                  fontWeight: "bold",
+                  /* fontWeight: "bold", */
                   marginLeft: "5px",
                 }}
               >
@@ -49,7 +49,7 @@ const Footer = () => {
               <span
                 style={{
                   color: "white",
-                  fontWeight: "bold",
+                  /* fontWeight: "bold", */
                   marginLeft: "5px",
                 }}
               >
