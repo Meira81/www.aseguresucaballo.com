@@ -22,7 +22,7 @@ const Information = () => {
       <div className="right">
         <section className="container-titulos">
           <h2 className="titulo-coberturas">
-            Nuestro seguro para caballos combina la más alta calidad de cobertura con un precio inigualable en el mercado
+            El seguro para caballos que combina la más alta calidad de coberturas con un precio inigualable en el mercado
           </h2>
           <h2 className="coberturas">¿Qué cubre nuestro seguro?</h2>
         </section>
