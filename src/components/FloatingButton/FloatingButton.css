@@ -116,6 +116,15 @@ input {
   background-color: #555;
 }
 
+@media (max-width: 600px) {
+  .modal-content {
+    width: 90%;
+    height: auto;
+    max-height: 90%;
+    overflow-y: auto;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 1250px) {
   .floating-button {
     position:sticky;
