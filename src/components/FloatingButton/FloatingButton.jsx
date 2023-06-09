@@ -27,8 +27,7 @@ const FloatingButton = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const apiKey =
-      "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";
+    const apiKey = process.env.REACT_APP_SENDGRID_API_KEY;
 
     sgMail.setApiKey(apiKey);
 
