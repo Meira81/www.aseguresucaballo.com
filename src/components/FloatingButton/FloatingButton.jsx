@@ -62,8 +62,11 @@ const FloatingButton = () => {
       {isModalOpen && (
         <Modal closeModal={closeModal}>
           <div className="modal-content">
+            <button className="floatingButton-close" onClick={closeModal}>
+              &times;
+            </button>
             <h2>Formulario de contacto</h2>
-            <form onSubmit={handleSubmit}>
+            <form className="formulario" onSubmit={handleSubmit}>
               <label htmlFor="name">Nombre:</label>
               <input
                 type="text"
@@ -77,16 +80,21 @@ const FloatingButton = () => {
                 id="phone"
                 value={phone}
                 onChange={handlePhoneChange}
+                required
               />
-              <button
-                type="submit"
-                style={{
-                  fontSize: "14px",
-                  padding: "8px 16px",
-                }}
-              >
+              <section className="h4-container">
+                <p className="disclaimer">
+                  Haciendo click en el botón ENVIAR acepta que los datos
+                  facilitados en el formulario sean tratados por
+                  ASEGURATUCABALLO.COM para ponerse en contacto con usted con la
+                  finalidad de gestionar de manera integral su solicitud.
+                </p>
+              </section>
+              <section className="button-submit-container">
+              <button className="button-submit" type="submit">
                 Enviar
               </button>
+              </section>
             </form>
           </div>
         </Modal>

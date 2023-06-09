@@ -38,6 +38,84 @@
   background-color: #00594d;
 }
 
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  max-width: 90%;
+}
+
+.floatingButton-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.floatingButton-close:hover {
+  color: #333;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.h4-container {
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.disclaimer {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.button-submit-container {
+  display: flex;
+  justify-content: end;
+}
+.button-submit {
+  font-size: 16px;
+  padding: 12px 24px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.button-submit:hover {
+  background-color: #555;
+}
+
 @media (max-width: 1250px) {
   .floating-button {
     position:sticky;

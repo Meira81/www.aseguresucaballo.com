@@ -10,23 +10,13 @@
   align-items: center;
 }
 
-.modal-content {
-  position: relative;
-  background-color: #f8f8f8;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  
-}
 
-.modal .close {
+.close {
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 20px;
-  /* Aumentado el tamaño de la fuente */
   color: #888;
-  /* Cambiado el color de la "x" */
   cursor: pointer;
   height: 30px;
   width: 30px;
@@ -34,16 +24,11 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  /* Cambiado el estilo del botón de cierre */
   background-color: transparent;
-  /* Cambiado el fondo transparente */
   border: none;
-  /* Quitado el borde */
   transition: color 0.3s ease;
-  /* Agregada una transición suave al color */
 }
 
 .modal .close:hover {
-  color: #333;
-  /* Cambiado el color al pasar el cursor sobre el botón de cierre */
+  color: whitesmoke;
 }

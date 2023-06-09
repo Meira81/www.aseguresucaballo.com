@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Information.css";
-import image from "../../assets/imagen.jpg";
+import image from "../../assets/imagen.png";
 
 const Information = () => {
 
