@@ -1,2 +1,3 @@
 # aseguresucaballo.com
-en desarrollo: web para promoción de seguros de caballo de uso recreativo
+Deploy: aseguresucaballo.netlify.app
+Web para promocionar la venta de seguros para caballos de paseo elaborada con React Vite.
