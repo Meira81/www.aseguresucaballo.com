@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./FloatingButton.css";
 import Modal from "../Modal/Modal";
+import sgMail from "@sendgrid/mail";
 
 const FloatingButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,8 +26,28 @@ const FloatingButton = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Nombre:", name);
-    console.log("Teléfono:", phone);
+
+    const apiKey =
+      "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";
+
+    sgMail.setApiKey(apiKey);
+
+    const msg = {
+      to: "info@aseguresucaballo.com",
+      from: "guadidev@gmail.com",
+      subject: "Solicitud información desde web",
+      text: `Nombre: ${name}\nTeléfono: ${phone}`,
+    };
+
+    sgMail
+      .send(msg)
+      .then(() => {
+        console.log("Correo electrónico enviado");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+
     setName("");
     setPhone("");
     closeModal();
@@ -41,32 +62,34 @@ const FloatingButton = () => {
 
       {isModalOpen && (
         <Modal closeModal={closeModal}>
-          <h2>Formulario de contacto</h2>
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Nombre:</label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={handleNameChange}
-            />
-            <label htmlFor="phone">Teléfono:</label>
-            <input
-              type="text"
-              id="phone"
-              value={phone}
-              onChange={handlePhoneChange}
-            />
-            <button
-              type="submit"
-              style={{
-                fontSize: "14px",
-                padding: "8px 16px",
-              }}
-            >
-              Enviar
-            </button>
-          </form>
+          <div className="modal-content">
+            <h2>Formulario de contacto</h2>
+            <form onSubmit={handleSubmit}>
+              <label htmlFor="name">Nombre:</label>
+              <input
+                type="text"
+                id="name"
+                value={name}
+                onChange={handleNameChange}
+              />
+              <label htmlFor="phone">Teléfono:</label>
+              <input
+                type="text"
+                id="phone"
+                value={phone}
+                onChange={handlePhoneChange}
+              />
+              <button
+                type="submit"
+                style={{
+                  fontSize: "14px",
+                  padding: "8px 16px",
+                }}
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
         </Modal>
       )}
     </div>

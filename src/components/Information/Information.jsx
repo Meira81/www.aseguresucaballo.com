@@ -79,7 +79,7 @@ const Information = () => {
             <div class="card-content">
               <h3>Caser Seguros</h3>
               <p>
-                Tenemos el respaldo de una compañía lider para poder ofrecerte
+                Tenemos el respaldo de una compañía líder para poder ofrecerte
                 el mejor seguro al mejor precio
               </p>
             </div>
