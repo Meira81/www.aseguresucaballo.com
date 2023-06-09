@@ -3,7 +3,6 @@
   background-color: #007363;
   height: 70px;
   width: 100%;
-
   padding:20px ;
 }
 
@@ -21,8 +20,9 @@
     justify-content: space-evenly;
     list-style: none;
     margin: 0;
-    width: 150%;
+    width: 190%;
     height: 20px;
+    
     
 }
 
@@ -36,7 +36,7 @@
 .logo {
   width: 180px;
   margin-top:-70px;
-  /* margin-left: -25px; */
+  margin-left: -25px;
 }
 
 .header-nav-ul li a {
@@ -57,6 +57,7 @@
     flex-direction: column;
     gap:8px;
     margin-top: 6px;
+    
   }
 
  

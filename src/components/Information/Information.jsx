@@ -22,9 +22,9 @@ const Information = () => {
       <div className="right">
         <section className="container-titulos">
           <h2 className="titulo-coberturas">
-            El seguro para equinos más económico con las mejores prestaciones
+            Nuestro seguro para caballos combina la más alta calidad de cobertura con un precio inigualable en el mercado
           </h2>
-          <h2 className="coberturas">¿Qué cubren nuestros seguros?</h2>
+          <h2 className="coberturas">¿Qué cubre nuestro seguro?</h2>
         </section>
         <div class="container">
           <div class="card">

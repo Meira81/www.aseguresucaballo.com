@@ -36,7 +36,7 @@ const Footer = () => {
                   marginLeft: "5px",
                 }}
               >
-                986 46 98 08
+                986 469 808
               </span>
             </a>
           </li>

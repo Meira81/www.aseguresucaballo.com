@@ -18,14 +18,18 @@ const Header = () => {
               <img className="logo" src={logo} alt="logo" />
             </a>
           </li>
-          
+
           <li className="header-email">
             <a href="mailto:info@aseguresucaballo.com">
-              <FontAwesomeIcon icon={faEnvelope} color="white" />
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                color="white"
+                style={{ fontSize: "18px" }}
+              />
               <span
                 style={{
                   color: "white",
-                  /* fontWeight: "bold", */
+                  fontSize: "14px",
                   marginLeft: "5px",
                 }}
               >
@@ -33,37 +37,41 @@ const Header = () => {
               </span>
             </a>
           </li>
-          <li className="header-contact-group">    
-          <li className="header-phone">
-            <a href="tel:986469808">
-              <FontAwesomeIcon icon={faPhone} color="white" />
-              <span
-                style={{
-                  color: "white",
-                  /* fontWeight: "bold", */
-                  marginLeft: "5px",
-                }}
-              >
-                986 46 98 08
-              </span>
-            </a>
-          </li>
+          <li className="header-contact-group">
+            <li className="header-phone">
+              <a href="tel:986469808">
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  color="white"
+                  style={{ fontSize: "18px" }}
+                />
+                <span
+                  style={{
+                    color: "white",
+                    fontSize: "14px",
+                    marginLeft: "5px",
+                  }}
+                >
+                  986 469 808
+                </span>
+              </a>
+            </li>
 
-          <li className="header-movil">
-            <a href="https://api.whatsapp.com/send?phone=34698289594">
-              <FaWhatsapp color="white" />
-              <span
-                style={{
-                  color: "white",
-                  /* fontWeight: "bold", */
-                  marginLeft: "5px",
-                }}
-              >
-                698 289 594
-              </span>
-            </a>
+            <li className="header-movil">
+              <a href="https://api.whatsapp.com/send?phone=34698289594">
+                <FaWhatsapp color="white" style={{ fontSize: "18px" }} />
+                <span
+                  style={{
+                    color: "white",
+                    fontSize: "14px",
+                    marginLeft: "5px",
+                  }}
+                >
+                  698 289 594
+                </span>
+              </a>
+            </li>
           </li>
-          </li>  
         </ul>
       </nav>
     </div>
