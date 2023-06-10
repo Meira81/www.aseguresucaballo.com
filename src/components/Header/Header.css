@@ -36,7 +36,7 @@
 .logo {
   width: 180px;
   margin-top:-70px;
-  margin-left: -25px;
+  /* margin-left: -25px; */
 }
 
 .header-nav-ul li a {
