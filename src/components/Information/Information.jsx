@@ -90,7 +90,7 @@ const Information = () => {
             </div>
             <div class="card-content">
               <h3>Precio</h3>
-              <p>56,09 €/año por caballo</p>
+              <p>56,03 €/año por caballo</p>
               <p className="nota">
                 (sujeto a posibles variaciones por parte de la compañía
                 aseguradora)
