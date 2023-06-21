@@ -10,7 +10,7 @@ const Information = () => {
         <article className="information-article-left">
           <p className="information-p-title">SEGURO PARA CABALLOS DE PASEO</p>
           <p className="information-p-subtitle">
-            Sal a disfrutar de tu caballo sin preocupaciones
+            Salga a disfrutar de su caballo sin preocupaciones
           </p>
         </article>
       </div>
