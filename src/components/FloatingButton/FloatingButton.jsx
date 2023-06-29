@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./FloatingButton.css";
 import Modal from "../Modal/Modal";
-import sgMail from "@sendgrid/mail";
 
 const FloatingButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,25 +26,7 @@ const FloatingButton = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const apiKey = process.env.REACT_APP_SENDGRID_API_KEY;
-
-    sgMail.setApiKey(apiKey);
-
-    const msg = {
-      to: "info@aseguresucaballo.com",
-      from: "guadidev@gmail.com",
-      subject: "Solicitud información desde web",
-      text: `Nombre: ${name}\nTeléfono: ${phone}`,
-    };
-
-    sgMail
-      .send(msg)
-      .then(() => {
-        console.log("Correo electrónico enviado");
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    // Aquí puedes realizar las acciones necesarias después de enviar el formulario
 
     setName("");
     setPhone("");
@@ -66,7 +47,7 @@ const FloatingButton = () => {
               &times;
             </button>
             <h2>Formulario de contacto</h2>
-            <form className="formulario" onSubmit={handleSubmit}>
+            <form className="formulario" onSubmit={handleSubmit} netlify>
               <label htmlFor="name">Nombre:</label>
               <input
                 type="text"
@@ -91,9 +72,9 @@ const FloatingButton = () => {
                 </p>
               </section>
               <section className="button-submit-container">
-              <button className="button-submit" type="submit">
-                Enviar
-              </button>
+                <button className="button-submit" type="submit">
+                  Enviar
+                </button>
               </section>
             </form>
           </div>
