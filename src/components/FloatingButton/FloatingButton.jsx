@@ -47,7 +47,13 @@ const FloatingButton = () => {
               &times;
             </button>
             <h2>Formulario de contacto</h2>
-            <form className="formulario" onSubmit={handleSubmit} netlify>
+            <form
+              className="formulario"
+              onSubmit={handleSubmit}
+              data-netlify="true"
+              netlify
+            >
+              <input type="hidden" name="form-name" value="contact" />
               <label htmlFor="name">Nombre:</label>
               <input
                 type="text"
