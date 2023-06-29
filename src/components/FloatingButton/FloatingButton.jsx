@@ -50,6 +50,7 @@ const FloatingButton = () => {
             <form
               className="formulario"
               onSubmit={handleSubmit}
+              method="POST"
               data-netlify="true"
               netlify
             >
