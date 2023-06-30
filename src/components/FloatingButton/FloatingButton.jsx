@@ -27,7 +27,7 @@ const FloatingButton = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://formsubmit.co/YOUR_EMAIL", {
+      const response = await fetch("https://formsubmit.co/guadidev@gmail.com", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
