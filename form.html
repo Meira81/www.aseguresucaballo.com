@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netlify Form</title>
+</head>
+
+<body>
+  <form name="contact" method="POST" data-netlify="true" action="/success">
+    <input type="hidden" name="form-name" value="contact" />
+    <label htmlFor="name">Nombre:</label>
+    <input type="text" id="name" name="name" required />
+    <label htmlFor="phone">Teléfono:</label>
+    <input type="text" id="phone" name="phone" required />
+    <section className="h4-container">
+      <p className="disclaimer">
+        Haciendo click en el botón ENVIAR acepta que los datos
+        facilitados en el formulario sean tratados por
+        ASEGURATUCABALLO.COM para ponerse en contacto con usted con la
+        finalidad de gestionar de manera integral su solicitud.
+      </p>
+    </section>
+    <section className="button-submit-container">
+      <button className="button-submit" type="submit">
+        Enviar
+      </button>
+  </form>
+</body>
+
+</html>

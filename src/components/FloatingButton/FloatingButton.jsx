@@ -49,41 +49,10 @@ const FloatingButton = () => {
             <h2>Formulario de contacto</h2>
             <form
               className="formulario"
-              /* onSubmit={handleSubmit} */
+              onSubmit={handleSubmit}
               method="POST"
-              data-netlify="true"
-              /* data-netlify-honeypot="bot-field" */
-            >
-              <input type="hidden" name="form-name" value="contact" />
-              <label htmlFor="name">Nombre:</label>
-              <input
-                type="text"
-                id="name"
-                value={name}
-                onChange={handleNameChange}
-              />
-              <label htmlFor="phone">Teléfono:</label>
-              <input
-                type="text"
-                id="phone"
-                value={phone}
-                onChange={handlePhoneChange}
-                required
-              />
-              <section className="h4-container">
-                <p className="disclaimer">
-                  Haciendo click en el botón ENVIAR acepta que los datos
-                  facilitados en el formulario sean tratados por
-                  ASEGURATUCABALLO.COM para ponerse en contacto con usted con la
-                  finalidad de gestionar de manera integral su solicitud.
-                </p>
-              </section>
-              <section className="button-submit-container">
-                <button className="button-submit" type="submit">
-                  Enviar
-                </button>
-              </section>
-            </form>
+              action="/form.html"
+            ></form>
           </div>
         </Modal>
       )}
