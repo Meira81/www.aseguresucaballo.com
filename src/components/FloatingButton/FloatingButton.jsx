@@ -26,25 +26,26 @@ const FloatingButton = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = new FormData();
-    formData.append("form-name", "contact");
-    formData.append("name", name);
-    formData.append("phone", phone);
-
     try {
-      await fetch("/", {
+      const response = await fetch("https://formsubmit.co/YOUR_EMAIL", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
+        body: new URLSearchParams({
+          name,
+          phone,
+        }).toString(),
       });
 
-      // Aquí puedes realizar las acciones necesarias después de enviar el formulario
-
-      setName("");
-      setPhone("");
-      closeModal();
+      if (response.ok) {
+        // Aquí puedes realizar las acciones necesarias después de enviar el formulario
+        setName("");
+        setPhone("");
+        closeModal();
+      } else {
+        console.error("Error al enviar el formulario:", response.statusText);
+      }
     } catch (error) {
-      console.error(error);
+      console.error("Error al enviar el formulario:", error);
     }
   };
 
@@ -62,7 +63,7 @@ const FloatingButton = () => {
               &times;
             </button>
             <h2>Formulario de contacto</h2>
-            <form className="formulario" onSubmit={handleSubmit} name="contact">
+            <form className="formulario" onSubmit={handleSubmit}>
               <label htmlFor="name">Nombre:</label>
               <input
                 type="text"
