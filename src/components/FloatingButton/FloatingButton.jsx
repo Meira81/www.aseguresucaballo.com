@@ -52,7 +52,27 @@ const FloatingButton = () => {
               onSubmit={handleSubmit}
               method="POST"
               action="/form.html"
-            ></form>
+            >
+              <label htmlFor="name">Nombre:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={name}
+                onChange={handleNameChange}
+                required
+              />
+              <label htmlFor="phone">Teléfono:</label>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                value={phone}
+                onChange={handlePhoneChange}
+                required
+              />
+              <button type="submit">Enviar</button>
+            </form>
           </div>
         </Modal>
       )}
