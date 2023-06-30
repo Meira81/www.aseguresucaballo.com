@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 import "./FloatingButton.css";
 import Modal from "../Modal/Modal";
 
@@ -27,8 +26,17 @@ const FloatingButton = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const formData = new FormData();
+    formData.append("form-name", "contact");
+    formData.append("name", name);
+    formData.append("phone", phone);
+
     try {
-      await axios.post("https://aseguresucaballo.com", { name, phone });
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
 
       // Aquí puedes realizar las acciones necesarias después de enviar el formulario
 
@@ -54,7 +62,7 @@ const FloatingButton = () => {
               &times;
             </button>
             <h2>Formulario de contacto</h2>
-            <form className="formulario" onSubmit={handleSubmit}>
+            <form className="formulario" onSubmit={handleSubmit} name="contact">
               <label htmlFor="name">Nombre:</label>
               <input
                 type="text"
