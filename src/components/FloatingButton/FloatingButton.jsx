@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./FloatingButton.css";
 import Modal from "../Modal/Modal";
 
@@ -23,14 +24,20 @@ const FloatingButton = () => {
     setPhone(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Aquí puedes realizar las acciones necesarias después de enviar el formulario
+    try {
+      await axios.post("https://aseguresucaballo.com", { name, phone });
 
-    setName("");
-    setPhone("");
-    closeModal();
+      // Aquí puedes realizar las acciones necesarias después de enviar el formulario
+
+      setName("");
+      setPhone("");
+      closeModal();
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -47,12 +54,7 @@ const FloatingButton = () => {
               &times;
             </button>
             <h2>Formulario de contacto</h2>
-            <form
-              className="formulario"
-              onSubmit={handleSubmit}
-              method="POST"
-              action="/form.html"
-            >
+            <form className="formulario" onSubmit={handleSubmit}>
               <label htmlFor="name">Nombre:</label>
               <input
                 type="text"
@@ -71,7 +73,19 @@ const FloatingButton = () => {
                 onChange={handlePhoneChange}
                 required
               />
-              <button type="submit">Enviar</button>
+              <section className="h4-container">
+                <p className="disclaimer">
+                  Haciendo click en el botón ENVIAR acepta que los datos
+                  facilitados en el formulario sean tratados por
+                  ASEGURATUCABALLO.COM para ponerse en contacto con usted con la
+                  finalidad de gestionar de manera integral su solicitud.
+                </p>
+              </section>
+              <section className="button-submit-container">
+                <button className="button-submit" type="submit">
+                  Enviar
+                </button>
+              </section>
             </form>
           </div>
         </Modal>
