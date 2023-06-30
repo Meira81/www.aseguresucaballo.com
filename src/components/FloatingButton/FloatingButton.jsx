@@ -6,6 +6,8 @@ const FloatingButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [textarea, setTextarea] = useState("");
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -23,6 +25,14 @@ const FloatingButton = () => {
     setPhone(e.target.value);
   };
 
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleTextareaChange = (e) => {
+    setTextarea(e.target.value);
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -33,6 +43,8 @@ const FloatingButton = () => {
         body: new URLSearchParams({
           name,
           phone,
+          email,
+          textarea,
         }).toString(),
       });
 
@@ -40,6 +52,8 @@ const FloatingButton = () => {
         // Aquí puedes realizar las acciones necesarias después de enviar el formulario
         setName("");
         setPhone("");
+        setEmail("");
+        setTextarea("");
         closeModal();
       } else {
         console.error("Error al enviar el formulario:", response.statusText);
@@ -52,8 +66,8 @@ const FloatingButton = () => {
   return (
     <div className="floating-button">
       <button className="button-floating" onClick={openModal}>
-        <p className="floating-button-top">¿Te</p>
-        <p className="floating-button-bottom">llamamos?</p>
+        <p className="floating-button-top">Solicitar</p>
+        <p className="floating-button-bottom">contacto</p>
       </button>
 
       {isModalOpen && (
@@ -80,7 +94,26 @@ const FloatingButton = () => {
                 name="phone"
                 value={phone}
                 onChange={handlePhoneChange}
+                placeholder="Opcional"
+              />
+              <label htmlFor="email">Email:</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                value={email}
+                onChange={handleEmailChange}
                 required
+              />
+              <label htmlFor="textarea">Comentarios:</label>
+              <textarea
+                className="input-textarea"
+                type="text"
+                id="textarea"
+                name="textarea"
+                value={textarea}
+                onChange={handleTextareaChange}
+                maxLength={2000}
               />
               <section className="h4-container">
                 <p className="disclaimer">
